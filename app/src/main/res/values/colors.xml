@@ -1,0 +1,26 @@
+<resources>
+    <!-- aksen & app bar -->
+    <color name="aksen">#3DDC84</color>
+    <color name="aksen_tua">#08301C</color>
+    <color name="appbar_terang">#2DB86F</color>
+    <color name="appbar_gelap">#14532D</color>
+    <color name="appbar_status">#1E9A5A</color>
+    <color name="judul_terang">#08301C</color>
+    <color name="judul_gelap">#D1FAE5</color>
+
+    <!-- pasangan warna terang / gelap yang dipilih saat mode gelap diterapkan -->
+    <color name="latar_terang">#FFFFFF</color>
+    <color name="latar_gelap">#121212</color>
+    <color name="nama_terang">#1B1B1B</color>
+    <color name="nama_gelap">#F5F5F5</color>
+    <color name="email_terang">#6B6B6B</color>
+    <color name="email_gelap">#B0B0B0</color>
+
+    <!-- isian & garis -->
+    <color name="input_terang">#FFFFFF</color>
+    <color name="input_gelap">#1E1E1E</color>
+    <color name="tepi_terang">#CBD5E1</color>
+    <color name="tepi_gelap">#3F3F46</color>
+    <color name="hint">#94A3B8</color>
+    <color name="garis">#94A3B8</color>
+</resources>

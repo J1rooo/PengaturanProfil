@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pengaturan Profil</string>
+    <string name="nama_default">Belum diisi</string>
+    <string name="email_default">email@contoh.com</string>
+    <string name="label_nama">Nama lengkap</string>
+    <string name="label_email">Email</string>
+    <string name="label_bio">Bio singkat</string>
+    <string name="label_pilih_avatar">Pilih avatar</string>
+    <string name="btn_ganti_avatar">Ganti Avatar</string>
+    <string name="label_mode_gelap">Mode gelap</string>
+    <string name="btn_simpan">Simpan Profil</string>
+    <string name="btn_reset">Hapus Semua Data</string>
+    <string name="pesan_tersimpan">Profil tersimpan</string>
+    <string name="pesan_reset">Data profil dihapus</string>
+    <string name="desc_avatar">Foto profil pengguna</string>
+    <string name="desc_opsi_avatar">Pilihan avatar</string>
+    <string name="label_kota">Kota</string>
+    <string name="kota_default">Kota belum diisi</string>
+    <string name="info_jumlah_buka">Kamu sudah membuka aplikasi ini %1$d kali</string>
+</resources>

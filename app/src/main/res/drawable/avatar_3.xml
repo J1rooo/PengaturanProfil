@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- lingkaran latar (pusat 32,32 jari-jari 32) -->
+    <path
+        android:fillColor="#dcfce7"
+        android:pathData="M32,32 m-32,0 a32,32 0 1,0 64,0 a32,32 0 1,0 -64,0" />
+
+    <!-- kepala: lingkaran pusat (32,26) jari-jari 10 -->
+    <path
+        android:fillColor="#15803d"
+        android:pathData="M22,26 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" />
+
+    <!-- bahu: setengah lingkaran di bawah kepala -->
+    <path
+        android:fillColor="#15803d"
+        android:pathData="M18,52 a14,14 0 0,1 28,0 z" />
+</vector>

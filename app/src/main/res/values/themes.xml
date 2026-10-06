@@ -1,0 +1,25 @@
+<resources>
+    <style name="Theme.PengaturanProfil" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/appbar_terang</item>
+        <item name="colorPrimaryDark">@color/appbar_status</item>
+        <item name="colorAccent">@color/aksen</item>
+    </style>
+
+    <!-- gaya dasar tombol -->
+    <style name="Widget.PengaturanProfil.Tombol" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.PengaturanProfil.Tombol.Utama">
+        <item name="android:background">@drawable/bg_tombol_utama</item>
+        <item name="android:textColor">@color/aksen_tua</item>
+    </style>
+
+    <!-- warna teks & latar tombol ini diganti lewat kode saat mode gelap -->
+    <style name="Widget.PengaturanProfil.Tombol.Ghost">
+        <item name="android:background">@drawable/bg_tombol_ghost</item>
+        <item name="android:textColor">@color/email_terang</item>
+    </style>
+</resources>

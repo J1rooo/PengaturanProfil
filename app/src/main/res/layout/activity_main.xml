@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutUtama"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/latar_terang"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ===== 1. kartu profil ===== -->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/desc_avatar"
+            android:src="@drawable/avatar_1" />
+
+        <TextView
+            android:id="@+id/tvNamaKartu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/nama_default"
+            android:textColor="@color/nama_terang"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmailKartu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/email_default"
+            android:textColor="@color/email_terang"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvKotaKartu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/kota_default"
+            android:textColor="@color/email_terang"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/garis_putus"
+            android:layerType="software" />
+
+        <!-- ===== 2. pilihan avatar ===== -->
+        <TextView
+            android:id="@+id/tvLabelAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="@string/label_pilih_avatar"
+            android:textColor="@color/email_terang"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rowAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_avatar_opsi"
+                android:contentDescription="@string/desc_opsi_avatar"
+                android:padding="3dp"
+                android:src="@drawable/avatar_1" />
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_avatar_opsi"
+                android:contentDescription="@string/desc_opsi_avatar"
+                android:padding="3dp"
+                android:src="@drawable/avatar_2" />
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_avatar_opsi"
+                android:contentDescription="@string/desc_opsi_avatar"
+                android:padding="3dp"
+                android:src="@drawable/avatar_3" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGantiAvatar"
+            style="@style/Widget.PengaturanProfil.Tombol.Ghost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="@string/btn_ganti_avatar" />
+
+        <!-- ===== 3. form isian ===== -->
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/label_nama"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textColor="@color/nama_terang"
+            android:textColorHint="@color/hint"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/label_email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/nama_terang"
+            android:textColorHint="@color/hint"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/label_kota"
+            android:inputType="textCapWords"
+            android:padding="12dp"
+            android:textColor="@color/nama_terang"
+            android:textColorHint="@color/hint"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="@string/label_bio"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="12dp"
+            android:textColor="@color/nama_terang"
+            android:textColorHint="@color/hint"
+            android:textSize="14sp" />
+
+        <!-- ===== 4. sakelar mode gelap ===== -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swGelap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/label_mode_gelap"
+            android:textColor="@color/nama_terang"
+            android:textSize="14sp" />
+
+        <!-- ===== 5. tombol aksi ===== -->
+        <Button
+            android:id="@+id/btnSimpan"
+            style="@style/Widget.PengaturanProfil.Tombol.Utama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_simpan" />
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/Widget.PengaturanProfil.Tombol.Ghost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btn_reset" />
+
+        <!-- ===== 6. penghitung pembukaan aplikasi ===== -->
+        <TextView
+            android:id="@+id/tvJumlahBuka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:textColor="@color/email_terang"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
